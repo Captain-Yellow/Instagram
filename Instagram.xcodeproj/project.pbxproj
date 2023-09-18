@@ -18,6 +18,7 @@
 		FD2EA3E72AB07AF800DDC4B0 /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EA3E62AB07AF800DDC4B0 /* InstagramTests.swift */; };
 		FD2EA3F12AB07AF800DDC4B0 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EA3F02AB07AF800DDC4B0 /* InstagramUITests.swift */; };
 		FD2EA3F32AB07AF800DDC4B0 /* InstagramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EA3F22AB07AF800DDC4B0 /* InstagramUITestsLaunchTests.swift */; };
+		FD5054F42AB720D800C3A967 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5054F32AB720D800C3A967 /* SignInHeaderView.swift */; };
 		FD5E3B372AB4BDEF00A1C409 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E3B362AB4BDEF00A1C409 /* ExploreViewController.swift */; };
 		FD5E3B392AB4BDFD00A1C409 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E3B382AB4BDFD00A1C409 /* CameraViewController.swift */; };
 		FD5E3B3B2AB4BE3000A1C409 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E3B3A2AB4BE3000A1C409 /* NotificationsViewController.swift */; };
@@ -39,6 +40,8 @@
 		FD5E3B5B2AB4C01600A1C409 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E3B5A2AB4C01600A1C409 /* AnalyticsManager.swift */; };
 		FD5E3B5D2AB4C28D00A1C409 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD5E3B5C2AB4C28D00A1C409 /* GoogleService-Info.plist */; };
 		FD5E3B5F2AB4C6FF00A1C409 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E3B5E2AB4C6FF00A1C409 /* HapticsManager.swift */; };
+		FD5FC1D42AB8289E00299ECE /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5FC1D32AB8289E00299ECE /* Extentions.swift */; };
+		FD5FC1D72AB8755900299ECE /* IGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5FC1D62AB8755900299ECE /* IGTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,7 @@
 		FD2EA3EC2AB07AF800DDC4B0 /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2EA3F02AB07AF800DDC4B0 /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		FD2EA3F22AB07AF800DDC4B0 /* InstagramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD5054F32AB720D800C3A967 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
 		FD5E3B362AB4BDEF00A1C409 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		FD5E3B382AB4BDFD00A1C409 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		FD5E3B3A2AB4BE3000A1C409 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		FD5E3B5A2AB4C01600A1C409 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		FD5E3B5C2AB4C28D00A1C409 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD5E3B5E2AB4C6FF00A1C409 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		FD5FC1D32AB8289E00299ECE /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		FD5FC1D62AB8755900299ECE /* IGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +220,7 @@
 				FD2EA3CF2AB07AF700DDC4B0 /* AppDelegate.swift */,
 				FD2EA3D12AB07AF700DDC4B0 /* SceneDelegate.swift */,
 				FD2EA3D82AB07AF800DDC4B0 /* Assets.xcassets */,
+				FD5FC1D32AB8289E00299ECE /* Extentions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -232,7 +239,9 @@
 		FD3237502AB34A370078E652 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FD5FC1D52AB8753300299ECE /* Components */,
 				FD2EA3DA2AB07AF800DDC4B0 /* LaunchScreen.storyboard */,
+				FD5054F32AB720D800C3A967 /* SignInHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +298,14 @@
 				FD5E3B4A2AB4BEF600A1C409 /* SettingViewController.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		FD5FC1D52AB8753300299ECE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FD5FC1D62AB8755900299ECE /* IGTextField.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,7 +560,9 @@
 				FD2EA3D42AB07AF700DDC4B0 /* HomeViewController.swift in Sources */,
 				FD5E3B4D2AB4BF3200A1C409 /* User.swift in Sources */,
 				FD5E3B432AB4BEB100A1C409 /* SignUpViewController.swift in Sources */,
+				FD5054F42AB720D800C3A967 /* SignInHeaderView.swift in Sources */,
 				FD5E3B3B2AB4BE3000A1C409 /* NotificationsViewController.swift in Sources */,
+				FD5FC1D72AB8755900299ECE /* IGTextField.swift in Sources */,
 				FD5E3B512AB4BF7800A1C409 /* Relationship.swift in Sources */,
 				FD5E3B4F2AB4BF6600A1C409 /* Post.swift in Sources */,
 				FD5E3B552AB4BFDB00A1C409 /* AuthManager.swift in Sources */,
@@ -551,6 +570,7 @@
 				FD5E3B3D2AB4BE3E00A1C409 /* ProfileViewController.swift in Sources */,
 				FD2EA3D02AB07AF700DDC4B0 /* AppDelegate.swift in Sources */,
 				FD5E3B5F2AB4C6FF00A1C409 /* HapticsManager.swift in Sources */,
+				FD5FC1D42AB8289E00299ECE /* Extentions.swift in Sources */,
 				FD2EA3D22AB07AF700DDC4B0 /* SceneDelegate.swift in Sources */,
 				FD5E3B592AB4C00100A1C409 /* DatabaseManager.swift in Sources */,
 			);
