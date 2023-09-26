@@ -15,6 +15,7 @@ class IGTextField: UITextField {
         autocorrectionType = .no
         leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         leftViewMode = .always
+        autocapitalizationType = .none
         layer.cornerRadius = 8
         layer.borderColor = UIColor.secondaryLabel.cgColor
         layer.borderWidth = 1
