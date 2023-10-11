@@ -10,7 +10,13 @@ import FirebaseStorage
 
 final class StorageManager {
     static let shared = StorageManager()
-    let storage = Storage.storage()
+    private let storage = Storage.storage().reference()
     
     private init() {}
+    
+    public func uploadProfilePhoto(username: String, photo: Data, complition: @escaping (Bool) -> Void) {
+        storage.child("\(username)/profile_photo.png").putData(photo) { _, error in
+            complition(error == nil)
+        }
+    }
 }

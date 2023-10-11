@@ -60,7 +60,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         view.backgroundColor = .secondarySystemBackground
         addSubviews()
         addButtonActions()
-        
         passwordTextField.delegate = self
         emailTextField.delegate = self
     }
@@ -76,7 +75,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func addButtonActions() {
-        signInButton.addTarget(self, action: #selector(didSignInTapped), for: .touchUpInside)
+        signInButton.addTarget(self, action: #selector(letMeGo/*didSignInTapped*/), for: .touchUpInside)
         createAccountButton.addTarget(self, action: #selector(didCreateAccountTapped), for: .touchUpInside)
         termOfServicesButton.addTarget(self, action: #selector(didTermOfServicesTapped), for: .touchUpInside)
         privacyPolicyButton.addTarget(self, action: #selector(didPrivacyPolicyTapped), for: .touchUpInside)
@@ -104,16 +103,37 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: - Buttons Actions
+    /*
     @objc private func didSignInTapped() {
         guard let email = emailTextField.text, let pass = passwordTextField.text, !email.trimmingCharacters(in: .whitespaces).isEmpty, !pass.trimmingCharacters(in: .whitespaces).isEmpty else {
             return
         }
         emailTextField.becomeFirstResponder()
         passwordTextField.becomeFirstResponder()
+        
+        AuthManager.shared.signIn(email: email, password: pass) { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                    case .success:
+                        let tabVC = TabBarViewController()
+                        tabVC.modalPresentationStyle = .fullScreen
+                        self?.present(tabVC, animated: true)
+                    case .failure(let error):
+                        print(error)
+                }
+            }
+        }
     }
-    
+    */
     @objc private func didCreateAccountTapped() {
         let vc = SignUpViewController()
+        vc.complition = { [weak self] in
+            DispatchQueue.main.async {
+                let tabVC = TabBarViewController()
+                tabVC.modalPresentationStyle = .fullScreen
+                self?.present(tabVC, animated: true)
+            }
+        }
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -129,5 +149,14 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         }
         let vc = SFSafariViewController(url: url)
         present(vc, animated: true)
+    }
+    
+    @objc private func letMeGo() {
+        DispatchQueue.main.async {
+            let tabVC = TabBarViewController()
+            tabVC.modalPresentationStyle = .fullScreen
+            self.navigationController?.popToRootViewController(animated: true)
+            self.present(tabVC, animated: true)
+        }
     }
 }

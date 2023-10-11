@@ -11,6 +11,7 @@ target 'Instagram' do
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'Firebase/Analytics'
+  pod 'SDWebImage'
 
   target 'InstagramTests' do
     inherit! :search_paths

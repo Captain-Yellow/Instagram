@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 import SafariServices
 
 class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -63,6 +64,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         button.setTitle("Privace Policy", for: .normal)
         return button
     }()
+    
+    public var complition: (() -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -190,10 +193,15 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         AuthManager.shared.signUp(email: email,
                                   password: pass,
                                   username: username,
-                                  profilePicture: userProfilePhotoImageView.image?.pngData()) { result in
+                                  profilePicture: userProfilePhotoImageView.image?.pngData()) { [weak self] result in
             switch result {
                 case .success(let user):
-                    print("ok")
+                    DispatchQueue.main.async {
+                        UserDefaults.standard.setValue(user.email, forKey: "email")
+                        UserDefaults.standard.setValue(user.username, forKey: "username")
+                        self?.navigationController?.popToRootViewController(animated: true)
+                        self?.complition?()
+                    }
                 case .failure(let error):
                     print(error)
             }
