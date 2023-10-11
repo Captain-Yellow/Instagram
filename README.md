@@ -1,7 +1,8 @@
 # Instagram
 iOS-Storyboard-Instagram app
 <br><br>
-<img src="https://github.com/Captain-Yellow/Instagram/assets/50849702/37ea10c8-37b9-4aba-8fc8-3fda0280edb4" width="200" height="400" alt="Image 3">
+<img src="https://github.com/Captain-Yellow/Instagram/assets/50849702/60e77d35-866c-437b-a4f6-b93b7f6c3888" width="200" height="400" alt="Image 3">
 <br><br>
-<img src="https://github.com/Captain-Yellow/Instagram/assets/50849702/cb99342e-eba5-4d2f-a1c2-c90700aadbe7" width="200" height="400" alt="Image 1">
-<img src="https://github.com/Captain-Yellow/Instagram/assets/50849702/dfaecb66-9226-4f09-b1e9-ee174abfd62b" width="200" height="400" alt="Image 2">
+<img src="https://github.com/Captain-Yellow/Instagram/assets/50849702/23045c30-9ef2-49ba-91e4-9b46fe1c4440" width="200" height="400" alt="Image 1">
+<img src="https://github.com/Captain-Yellow/Instagram/assets/50849702/f6d0e293-c0f1-4620-8c54-0b26c23b439f" width="200" height="400" alt="Image 2">
+
