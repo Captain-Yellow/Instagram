@@ -10,6 +10,8 @@
 		9506C9E53441C140F245BCBF /* Pods_Instagram_InstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076F86CF1FBF994C1D769C37 /* Pods_Instagram_InstagramUITests.framework */; };
 		AE57B8FAB8D9B7E87C445704 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AFDF263FEADDDC63F1013F /* Pods_Instagram.framework */; };
 		BBE10A859BDA997EC563DDF6 /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88FC8B21CA3FB40609A4E1E /* Pods_InstagramTests.framework */; };
+		FD1FEC132B11E23B006B4FFD /* PostEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1FEC122B11E23B006B4FFD /* PostEditViewController.swift */; };
+		FD1FEC152B125A6A006B4FFD /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1FEC142B125A6A006B4FFD /* PhotoCollectionViewCell.swift */; };
 		FD2EA3D02AB07AF700DDC4B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EA3CF2AB07AF700DDC4B0 /* AppDelegate.swift */; };
 		FD2EA3D22AB07AF700DDC4B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EA3D12AB07AF700DDC4B0 /* SceneDelegate.swift */; };
 		FD2EA3D42AB07AF700DDC4B0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EA3D32AB07AF700DDC4B0 /* HomeViewController.swift */; };
@@ -84,6 +86,8 @@
 		C0AAEF2238FB3A234BA6C0ED /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		C88FC8B21CA3FB40609A4E1E /* Pods_InstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D691FB8ED3C4FD749F985690 /* Pods-Instagram-InstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-InstagramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Instagram-InstagramUITests/Pods-Instagram-InstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD1FEC122B11E23B006B4FFD /* PostEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditViewController.swift; sourceTree = "<group>"; };
+		FD1FEC142B125A6A006B4FFD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD2EA3CC2AB07AF700DDC4B0 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2EA3CF2AB07AF700DDC4B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD2EA3D12AB07AF700DDC4B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -270,6 +274,7 @@
 				FD5FC1D52AB8753300299ECE /* Components */,
 				FD2EA3DA2AB07AF800DDC4B0 /* LaunchScreen.storyboard */,
 				FD5054F32AB720D800C3A967 /* SignInHeaderView.swift */,
+				FD1FEC142B125A6A006B4FFD /* PhotoCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				FD5E3B462AB4BED800A1C409 /* ListViewController.swift */,
 				FD5E3B482AB4BEEB00A1C409 /* PostViewController.swift */,
 				FD5E3B4A2AB4BEF600A1C409 /* SettingViewController.swift */,
+				FD1FEC122B11E23B006B4FFD /* PostEditViewController.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -620,6 +626,7 @@
 				FD5FC1D72AB8755900299ECE /* IGTextField.swift in Sources */,
 				FD5E3B512AB4BF7800A1C409 /* Relationship.swift in Sources */,
 				FD76C9E52ACAB27900496E7A /* PostCollectionViewCellViewModel.swift in Sources */,
+				FD1FEC132B11E23B006B4FFD /* PostEditViewController.swift in Sources */,
 				FDCDD2082ACC73C600E7BB9D /* PostActionCollectionViewCell.swift in Sources */,
 				FD5E3B552AB4BFDB00A1C409 /* AuthManager.swift in Sources */,
 				FD5E3B412AB4BEA500A1C409 /* SignInViewController.swift in Sources */,
@@ -628,6 +635,7 @@
 				FD2EA3D02AB07AF700DDC4B0 /* AppDelegate.swift in Sources */,
 				FD76C9E92ACAB53400496E7A /* PostActionsCollectionViewCellViewModel.swift in Sources */,
 				FD5E3B5F2AB4C6FF00A1C409 /* HapticsManager.swift in Sources */,
+				FD1FEC152B125A6A006B4FFD /* PhotoCollectionViewCell.swift in Sources */,
 				FD5FC1D42AB8289E00299ECE /* Extentions.swift in Sources */,
 				FDCDD2042ACC70DE00E7BB9D /* PosterCollectionViewCell.swift in Sources */,
 				FD2EA3D22AB07AF700DDC4B0 /* SceneDelegate.swift in Sources */,

@@ -38,6 +38,12 @@ class TabBarViewController: UITabBarController {
         nav4.tabBarItem = UITabBarItem(title: "Notificatios", image: UIImage(systemName: "bell"), tag: 4)
         nav5.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.circle"), tag: 5)
         
+        if #available(iOS 14.0, *) {
+            nav3.navigationItem.backButtonDisplayMode = .minimal
+        } else {
+            nav3.navigationItem.backButtonTitle = ""
+        }
+        
         nav1.navigationBar.tintColor = .label
         nav2.navigationBar.tintColor = .label
         nav3.navigationBar.tintColor = .label
