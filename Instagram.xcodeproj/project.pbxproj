@@ -51,12 +51,14 @@
 		FD76C9ED2ACAD7C100496E7A /* PostLikesCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76C9EC2ACAD7C100496E7A /* PostLikesCollectionViewCellViewModel.swift */; };
 		FD76C9EF2ACAD84E00496E7A /* PostCaptionCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76C9EE2ACAD84E00496E7A /* PostCaptionCollectionViewCellViewModel.swift */; };
 		FD76C9F12ACAD88C00496E7A /* PostDatetimeCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD76C9F02ACAD88C00496E7A /* PostDatetimeCollectionViewCellViewModel.swift */; };
+		FD9010092B149D8A00954855 /* SearchResaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9010082B149D8A00954855 /* SearchResaultViewController.swift */; };
 		FDCDD2042ACC70DE00E7BB9D /* PosterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDD2032ACC70DE00E7BB9D /* PosterCollectionViewCell.swift */; };
 		FDCDD2062ACC726A00E7BB9D /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDD2052ACC726A00E7BB9D /* PostCollectionViewCell.swift */; };
 		FDCDD2082ACC73C600E7BB9D /* PostActionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDD2072ACC73C600E7BB9D /* PostActionCollectionViewCell.swift */; };
 		FDCDD20A2ACC73EB00E7BB9D /* PostLikesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDD2092ACC73EB00E7BB9D /* PostLikesCollectionViewCell.swift */; };
 		FDCDD20C2ACC740000E7BB9D /* PostCaptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDD20B2ACC740000E7BB9D /* PostCaptionCollectionViewCell.swift */; };
 		FDCDD20E2ACC741000E7BB9D /* PostDatetimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDD20D2ACC741000E7BB9D /* PostDatetimeCollectionViewCell.swift */; };
+		FDFAB00B2B16272B00626B1B /* dummyJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAB00A2B16272B00626B1B /* dummyJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,12 +133,14 @@
 		FD76C9EC2ACAD7C100496E7A /* PostLikesCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLikesCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		FD76C9EE2ACAD84E00496E7A /* PostCaptionCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCaptionCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		FD76C9F02ACAD88C00496E7A /* PostDatetimeCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDatetimeCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		FD9010082B149D8A00954855 /* SearchResaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResaultViewController.swift; sourceTree = "<group>"; };
 		FDCDD2032ACC70DE00E7BB9D /* PosterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCollectionViewCell.swift; sourceTree = "<group>"; };
 		FDCDD2052ACC726A00E7BB9D /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		FDCDD2072ACC73C600E7BB9D /* PostActionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionCollectionViewCell.swift; sourceTree = "<group>"; };
 		FDCDD2092ACC73EB00E7BB9D /* PostLikesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLikesCollectionViewCell.swift; sourceTree = "<group>"; };
 		FDCDD20B2ACC740000E7BB9D /* PostCaptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCaptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		FDCDD20D2ACC741000E7BB9D /* PostDatetimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDatetimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		FDFAB00A2B16272B00626B1B /* dummyJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummyJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +255,7 @@
 				FD2EA3D12AB07AF700DDC4B0 /* SceneDelegate.swift */,
 				FD2EA3D82AB07AF800DDC4B0 /* Assets.xcassets */,
 				FD5FC1D32AB8289E00299ECE /* Extentions.swift */,
+				FDFAB00A2B16272B00626B1B /* dummyJson.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				FD5E3B482AB4BEEB00A1C409 /* PostViewController.swift */,
 				FD5E3B4A2AB4BEF600A1C409 /* SettingViewController.swift */,
 				FD1FEC122B11E23B006B4FFD /* PostEditViewController.swift */,
+				FD9010082B149D8A00954855 /* SearchResaultViewController.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -613,6 +619,7 @@
 				FD5E3B4B2AB4BEF600A1C409 /* SettingViewController.swift in Sources */,
 				FD76C9F12ACAD88C00496E7A /* PostDatetimeCollectionViewCellViewModel.swift in Sources */,
 				FD5E3B572AB4BFED00A1C409 /* StorageManager.swift in Sources */,
+				FD9010092B149D8A00954855 /* SearchResaultViewController.swift in Sources */,
 				FD5E3B5B2AB4C01600A1C409 /* AnalyticsManager.swift in Sources */,
 				FD76C9EB2ACACA9F00496E7A /* HomeFeedCellType.swift in Sources */,
 				FD5E3B392AB4BDFD00A1C409 /* CameraViewController.swift in Sources */,
@@ -638,6 +645,7 @@
 				FD1FEC152B125A6A006B4FFD /* PhotoCollectionViewCell.swift in Sources */,
 				FD5FC1D42AB8289E00299ECE /* Extentions.swift in Sources */,
 				FDCDD2042ACC70DE00E7BB9D /* PosterCollectionViewCell.swift in Sources */,
+				FDFAB00B2B16272B00626B1B /* dummyJson.swift in Sources */,
 				FD2EA3D22AB07AF700DDC4B0 /* SceneDelegate.swift in Sources */,
 				FD5E3B592AB4C00100A1C409 /* DatabaseManager.swift in Sources */,
 				FDCDD20C2ACC740000E7BB9D /* PostCaptionCollectionViewCell.swift in Sources */,
