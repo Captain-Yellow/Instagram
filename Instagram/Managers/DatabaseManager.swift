@@ -50,4 +50,41 @@ class DatabaseManager {
             complition(subset)
         }
     }
+    
+    public func explorePosts(complition: @escaping ([Post]) -> Void) {
+        let ref = database.collection("users")
+        ref.getDocuments { snapshot, error in
+            guard let users = snapshot?.documents.compactMap({ User(with: $0.data()) }), error == nil else {
+                complition([])
+                return
+            }
+            
+            let dipatchGroup = DispatchGroup()
+            var aggregatePost = [Post]()
+            
+            users.forEach { user in
+                dipatchGroup.enter()
+                
+                let username = user.username
+                let postRef = self.database.collection("users/\(username)/posts")
+                
+                postRef.getDocuments { snapshot, error in
+                    
+                    defer {
+                        dipatchGroup.leave()
+                    }
+                    
+                    guard let post = snapshot?.documents.compactMap({ Post(with: $0.data()) }), error == nil else {
+                        return
+                    }
+                    
+                    aggregatePost.append(contentsOf: post)
+                }
+                
+                dipatchGroup.notify(queue: .main) {
+                    complition(aggregatePost)
+                }
+            }
+        }
+    }
 }
